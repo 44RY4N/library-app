@@ -1,0 +1,155 @@
+body{
+    padding:1rem;
+}
+
+
+#one, #two{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+}
+
+#two{
+     z-index: -10;
+}
+
+
+table{
+    width: 100vw;
+    border-collapse: collapse;
+}
+
+
+
+th,td,.action{
+    border-bottom:2px solid black;
+    width: 15vw;
+    text-align: center;
+    height: 4vh;
+    font-weight: bolder;
+}
+
+.delete{
+    height: 2.5vh;
+
+}
+
+.action{
+    border-bottom:none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.adder{
+    width: 20vw;
+    height: 4vh;
+    background-color: rgb(206, 227, 245);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s ease;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-right: 1rem solid rgb(235, 227, 161);
+    box-shadow: 1px 1px 10px 2px rgb(107, 107, 107);
+}
+.blank{
+    height: 2rem;
+}
+
+.main-text{
+    position:fixed;
+}
+
+.info,.foot{
+ 
+    align-self: flex-start;
+    padding: 2rem; 
+}
+
+
+.adder.expand .info{
+    transform: translateX(2vw);
+    transition: all 2s ease;
+}
+
+
+
+
+
+
+.info{
+    transform: translateX(-19.5rem);
+    transition: all 2s ease;
+    font-size: min(2rem,2.2vh);
+    background-color:rgb(235, 227, 161);
+    height: 100%;
+    width:16.2vw;
+    border:none;
+    margin-left:-2vw;
+    margin-bottom:-2vw;
+}
+
+.foot{
+    margin-top: 22vh;
+    text-align: left;
+    padding:1rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+form{
+    margin-top:1rem;
+}
+
+a{
+    color:darkorchid;
+    text-decoration: none;
+}
+
+
+.adder.expand{
+    height: 80vh;
+    width: 90vw;
+}
+
+form>div>input{
+    max-width: 8vw;
+}
+
+.unread{
+    box-shadow: 1px 1px 9px 2px rgb(4, 0, 255);
+    min-width: 4vw;
+    margin-top:0.4rem;
+    
+}
+
+.read{
+    margin-top:0.4rem;
+    min-width: 4vw;
+    filter:blur(0.5px);
+    text-decoration: line-through black 2px;
+    box-shadow: 1px 1px 10px 2px rgb(0, 255, 21);
+}
+
+.trash:hover{
+    animation: light-wiggle 0.4s ease forwards
+}
+
+tr{
+    transition:all 0.2s ease-in-out;
+}
+
+@keyframes light-wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+  75% { transform: rotate(-05deg); }
+  100% { transform: rotate(0deg); }
+}
+

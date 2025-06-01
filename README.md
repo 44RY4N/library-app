@@ -46,9 +46,9 @@ library-app/
 ├── style.css                                               
 ├── script.js                                                               
 ├── img/                                                                     
-│ ├── l1.png 
-│ ├── l2.png                                                                                   
-│ └── l11.png                                                                                
+│ ├── l1.png                                                         
+│ ├── l2.png                                                                                                                                       
+│ └── l11.png                                                                                                                                  
 └── README.md                                                                                       
 
 
